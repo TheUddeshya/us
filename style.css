@@ -1,1 +1,36 @@
-    
+.wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
+  img{
+    float: right;
+    width: 150px;
+    shape-margin:8px;
+    margin-right: 70px;
+    margin-bottom: 0;
+    margin-left:8px;
+  }
+
+  .typing-demo {
+    width: 32ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
