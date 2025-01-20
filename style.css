@@ -3,17 +3,17 @@
     display: grid;
     place-items: center;
   }
+
   img{
     float: right;
     width: 150px;
     shape-margin:8px;
-    margin-right: 70px;
-    margin-bottom: 0;
-    margin-left:8px;
+    margin: auto;
+    filter: drop-shadow(60px 50px 15px #bcbaba)
   }
 
   .typing-demo {
-    width: 32ch;
+    width: 31ch;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
@@ -21,15 +21,29 @@
     font-family: monospace;
     font-size: 2em;
   }
-  
   @keyframes typing {
     from {
       width: 0
     }
   }
-      
   @keyframes blink {
     50% {
       border-color: transparent
     }
+  }
+
+  button{
+    background-color:rgb(224, 203, 176);
+    border: 1px solid;
+    border-color: rgb(185, 177, 162);
+    color: Black;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: large;
+    padding: 8px 18px 8px 18px;
+    border-radius: 8px;
+  }
+  button:hover{
+    cursor: pointer;
+    box-shadow: 2px 3px 0px 0px rgb(0 0 0 / 0.8);
   }
